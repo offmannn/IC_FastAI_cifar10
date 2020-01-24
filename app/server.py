@@ -9,10 +9,16 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
-export_file_name = 'export.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+#model_file_url = 'https://www.googleapis.com/drive/v3/files/1JYhLyMsxbk4cWFz2i_CWhWPp3oigCc0e?alt=media&key=AIzaSyAd7z8AyEN9HWIUh6EE3Nt7IUMWU7eR6Eo'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1JYhLyMsxbk4cWFz2i_CWhWPp3oigCc0e'
+
+#model_file_name = 'IC_cifar10_RenderTest'
+export_file_name = 'IC_cifar10_RenderTest2.pkl'
+
+# Model-Classes -> classes = ['black', 'grizzly', 'teddys']
+classes = ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
+
 path = Path(__file__).parent
 
 app = Starlette()
