@@ -1,6 +1,6 @@
 # Starter for deploying [fast.ai](https://www.fast.ai) models on [Render](https://render.com)
 
-## Bearbeite: server.py und requierements.txt
+## Bearbeite: server.py und requirements.txt
 
 This repo can be used as a starting point to deploy [fast.ai](https://github.com/fastai/fastai) models on Render.
 
